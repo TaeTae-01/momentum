@@ -1,46 +1,54 @@
 const quotes = [
     {
-    quote: 'I never dreamed about success, I worked for it',
-    author: 'Estee Lauder'
+    quote: 'No Kid From Santo Will Ever Be A Suit.',
+    author: 'David Martinez - Season 1, Episode 1'
     },
     {
-    quote: 'Do not try to be original, just try to be good.',
-    author: 'Paul Rand'
+    quote: 'You`re The Guy Who Jumps Into The Fire.',
+    author: 'Lucy - Season 1, Episode 4'
     },
     {
-    quote: 'Do not be afraid to give up the good to go for the great',
-    author: 'John D. Rockefeller'
+    quote: 'I`ll Take You To The Moon! I Promise!',
+    author: 'David Martinez - Season 1, Episode 4'
     },
     {
-    quote: 'If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.',
-    author: 'Martin Luther King Jr.'
+    quote: 'Just Keep Running.',
+    author: 'Maine - Season 1, Episode 6'
     },
     {
-    quote: 'Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.',
-    author: 'Thomas Edison'
+    quote: 'I Feel Better In Metal Than In My Own Skin.',
+    author: 'David Martinez - Season 1, Episode 7'
     },
     {
-    quote: 'The fastest way to change yourself is to hang out with people who are already the way you want to be',
-    author: 'REid Hoffman'
+    quote: 'There`s No Place Like Night City If You Wanna Hide.',
+    author: 'Lucy - Season 1, Episode 7'
     },
     {
-    quote: 'Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations',
-    author: 'Tim O Reilly'
+    quote: 'What`s Up, Choom ?',
+    author: 'Rebecca - Season 1, Episode 5'
     },
     {
     quote: 'Some people dream of success, while other people get up every morning and make it happen',
     author: 'Wayne Huizenga'
     },
     {
-    quote: 'The only thing worse than starting something and falling.. is not starting something',
-    author: 'SEth Godin'
+    quote: 'There Is But One True Measure Of Success In Night City.',
+    author: 'Faraday - Season 1, Episode 9'
     },
     {
-    quote: 'If you really want to do something, you will find a way. If you do not, you will find an excuse.',
-    author: 'Jim Rohn'
+    quote: 'You Don`t Make A Name As A Cyberpunk By How You Live.',
+    author: 'Lucy - Season 1, Episode 4'
+    },
+    {
+        quote: 'You Never Had To Save Me.',
+        author: 'Lucy - Season 1, Episode 10'
     },
     ];
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
+const todaysQuote = (quotes[Math.floor(Math.random() * quotes.length)]);
+
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;

@@ -1,6 +1,12 @@
-.hidden {
-    display: none;
+/*body {
+    text-align: center;
+    align-items: center;
 }
+  나중에 css 정리할때 다시 살려두기
+form {
+    margin: 0 auto;
+    max-width: 300px;
+} */
 
 img {
     position: absolute;
@@ -10,5 +16,9 @@ img {
     top: 0px;
     right: 0px;
     bottom: 0px;
+    opacity: 70%;
     z-index: -1;
+}
+.hidden {
+    display: none;
 }
